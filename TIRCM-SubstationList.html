@@ -1,0 +1,379 @@
+<!--
+	Project Name: Transformer Indicator Realtime Condition Monitoring HTML File
+	Author: Steven Yang (SY16401)
+	Company: CLP Power (HK) Limited
+	Team: PSBG/WER/MB/Plant
+	Date: 25-Jan-2019
+	Version: V1.01
+	-->
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.png">
+		<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+		<title>TIRCM-Substation List</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--     Fonts and icons     -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		<!-- Material Kit CSS -->
+		<link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper ">
+		<div class="sidebar" data-color="purple" data-background-color="white">
+			<!--
+				Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+				
+				Tip 2: you can also add an image using data-image tag
+				-->
+			<div class="logo">
+				<a class="simple-text logo-normal">
+				TIRCM V1.01
+				</a>
+			</div>
+			<div class="sidebar-wrapper">
+				<ul class="nav">
+					<!-- your sidebar here -->
+					<li class="nav-item active">
+						<a class="nav-link" href="#0">
+							<!--replace href with substation.html later-->
+							<i class="material-icons">content_paste</i>
+							<p>Substation List</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar-background" style="background-image: url(&quot;./assets/img/sidebar-3.jpg&quot;);">
+			</div>
+		</div>
+		<div class="main-panel">
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+				<div class="container-fluid">
+					<div class="navbar-wrapper">
+						<i class="navbar-brand" href="#pablo">Substation List</i>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end">
+							<form class="navbar-form">
+								<span class="bmd-form-group">
+									<!-- <div class="input-group no-border">
+										<input type="text" value="" class="form-control" placeholder="Search...">
+										<button type="submit" class="btn btn-white btn-round btn-just-icon">
+											<i class="material-icons" onkeyup="mySearch()">search</i>
+											<div class="ripple-container"></div>
+										</button>
+										</div> -->
+									<!-- Search jquery inside the page(not done yet) -->
+									<script></script>
+								</span>
+							</form>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#pablo">
+									<i class="material-icons">notifications</i><p class="d-lg-none d-md-block">Notifications</p>
+									</a>
+								</li>
+								<!-- your navbar here -->
+							</ul>
+						</div>
+					</div>
+			</nav>
+			<!-- End Navbar -->
+			<div class="content">
+			<div class="container-fluid">
+			<!-- your content here -->
+			<div id="accordion" role="tablist">
+			<div class="card card-collapse">
+			<div class="card-header" role="tab" id="headingOne">
+			<h5 class="mb-0">
+			<a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			"A"
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+			</h5>
+			</div>
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+			<div class="card-body">
+			<table class="table">
+			<thead>
+			<tr>
+			<th class="text-center"><b>Substation Name</b></th>
+			<th class="text-center" colspan="3"><b>Equipment List</b></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="text-center">APA</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center" rowspan="2">APB</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">Tx H4</td>
+			<td class="text-center">Tx H5</td>
+			<td class="text-center">Tx H6</td>
+			</tr>												
+			</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			<div class="card card-collapse">
+			<div class="card-header" role="tab" id="headingTwo">
+			<h5 class="mb-0">
+			<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+			"B"
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+			</h5>
+			</div>
+			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+			<div class="card-body">
+			<table class="table">
+			<thead>
+			<tr>
+			<th class="text-center"><b>Substation Name</b></th>
+			<th class="text-center" colspan="3"><b>Equipment List</b></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="text-center">BOU</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center" rowspan="2">BXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">Tx H4</td>
+			<td class="text-center">Tx H5</td>
+			<td class="text-center">Tx H6</td>
+			</tr>												
+			</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			<div class="card card-collapse">
+			<div class="card-header" role="tab" id="headingThree">
+			<h5 class="mb-0">
+			<a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+			"C"
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+			</h5>
+			</div>
+			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+			<div class="card-body">
+			<table class="table">
+			<thead>
+			<tr>
+			<th class="text-center"><b>Substation Name</b></th>
+			<th class="text-center" colspan="3"><b>Equipment List</b></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="text-center">CHY</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center"><a href="./substation/TIRCM-SS-CHY-Tx-H2.html"><b>Tx H2</b></a></td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">CXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center" rowspan="2">CXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">Tx H4</td>
+			<td class="text-center">Tx H5</td>
+			<td class="text-center">Tx H6</td>
+			</tr>												
+			</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			<div class="card card-collapse">
+			<div class="card-header" role="tab" id="headingFour">
+			<h5 class="mb-0">
+			<a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+			"D"
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+			</h5>
+			</div>
+			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+			<div class="card-body">
+			<table class="table">
+			<thead>
+			<tr>
+			<th class="text-center"><b>Substation Name</b></th>
+			<th class="text-center" colspan="3"><b>Equipment List</b></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="text-center">DXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center" rowspan="2">DXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">Tx H4</td>
+			<td class="text-center">Tx H5</td>
+			<td class="text-center">Tx H6</td>
+			</tr>												
+			</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			<div class="card card-collapse">
+			<div class="card-header" role="tab" id="headingFive">
+			<h5 class="mb-0">
+			<a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+			"E"
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+			</h5>
+			</div>
+			<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+			<div class="card-body">
+			<table class="table">
+			<thead>
+			<tr>
+			<th class="text-center"><b>Substation Name</b></th>
+			<th class="text-center" colspan="3"><b>Equipment List</b></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="text-center">EXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center" rowspan="2">CXX</td>
+			<td class="text-center">Tx H1</td>
+			<td class="text-center">Tx H2</td>
+			<td class="text-center">Tx H3</td>
+			</tr>
+			<tr>
+			<td class="text-center">Tx H4</td>
+			<td class="text-center">Tx H5</td>
+			<td class="text-center">Tx H6</td>
+			</tr>												
+			</tbody>
+			</table>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<footer class="footer">
+			<div class="container-fluid">
+			<nav class="float-left">
+			<ul>
+			<li>
+			Transformer Indicator Real-time Condition Monitoring
+			</li>
+			</ul>
+			</nav>
+			<div class="copyright float-right">
+			&copy;
+			<script>
+				document.write(new Date().getFullYear())
+			</script>, made by <i class="material-icons">account_circle</i> 
+			<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
+			</div>
+			<!-- your footer here -->
+			</div>
+			</footer>
+			</div>
+		</div>
+		<!--   Core JS Files   -->
+		<script src="./assets/js/core/jquery.min.js"></script>
+		<script src="./assets/js/core/popper.min.js"></script>
+		<script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+		<script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+		<!-- Plugin for Date Time Format, full documentation here: http://blog.stevenlevithan.com/archives/date-time-format -->
+		<script src="./assets/js/plugins/date.format.js"></script>
+		<!-- Plugin for the momentJs  -->
+		<script src="./assets/js/plugins/moment.min.js"></script>
+		<!--  Plugin for Sweet Alert -->
+		<script src="./assets/js/plugins/sweetalert2.js"></script>
+		<!-- Forms Validations Plugin -->
+		<script src="./assets/js/plugins/jquery.validate.min.js"></script>
+		<!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+		<script src="./assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+		<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+		<script src="./assets/js/plugins/bootstrap-selectpicker.js"></script>
+		<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+		<!-- <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script> -->
+		<!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+		<script src="./assets/js/plugins/jquery.dataTables.min.js"></script>
+		<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+		<script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
+		<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+		<!-- <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script> -->
+		<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+		<!-- <script src="../assets/js/plugins/fullcalendar.min.js"></script> -->
+		<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+		<!-- <script src="../assets/js/plugins/jquery-jvectormap.js"></script> -->
+		<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+		<script src="./assets/js/plugins/nouislider.min.js"></script>
+		<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+		<!-- Library for adding dinamically elements -->
+		<script src="./assets/js/plugins/arrive.min.js"></script>
+		<!--  Google Maps Plugin    -->
+		<!-- <script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2Y7RLa67iO342K25_fS8bamdtrD-mwk&callback=myMap"></script> -->
+		<!-- Place this tag in your head or just before your close body tag. -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<!-- Chartist JS -->
+		<!-- ><script src="../assets/js/plugins/chartist.min.js"></script>< -->
+		<!--  Notifications Plugin    -->
+		<script src="./assets/js/plugins/bootstrap-notify.js"></script>
+		<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+		<script src="./assets/js/material-dashboard.min.js?v=2.1.1" type="text/javascript"></script>
+		<!--must put at the bottom-->
+	</body>
+</html>

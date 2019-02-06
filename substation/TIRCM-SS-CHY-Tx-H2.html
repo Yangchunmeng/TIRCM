@@ -1,0 +1,333 @@
+<!--
+	Project Name: Transformer Indicator Realtime Condition Monitoring HTML File
+	Author: Steven Yang (SY16401)
+	Company: CLP Power (HK) Limited
+	Team: PSBG/WER/MB/Plant
+	Date: 25-Jan-2019
+	Version: V1.01
+	-->
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon.png">
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+		<title>TIRCM-SS-CHY-Tx-H2</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--     Fonts and icons     -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		<!-- Material Kit CSS -->
+		<link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper ">
+		<div class="sidebar" data-color="purple" data-background-color="white">
+			<!--
+				Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+				
+				Tip 2: you can also add an image using data-image tag
+				-->
+			<div class="logo">
+				<a class="simple-text logo-normal">
+				TIRCM V1.01
+				</a>
+			</div>
+			<div class="sidebar-wrapper">
+				<ul class="nav">
+					<!-- your sidebar here -->
+					<li class="nav-item ">
+						<a class="nav-link" href="../TIRCM-SubstationList.html">
+							<!--replace href with substation.html later-->
+							<i class="material-icons">content_paste</i>
+							<p>Substation List</p>
+						</a>
+					</li>
+					<li class="nav-item active  ">
+						<a class="nav-link" href="#0">
+							<i class="material-icons">dashboard</i>
+							<p>Dashboard</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar-background" style="background-image: url(&quot;../assets/img/sidebar-3.jpg&quot;);">
+			</div>
+		</div>
+		<div class="main-panel">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+			<div class="container-fluid">
+				<div class="navbar-wrapper">
+					<i class="navbar-brand" href="#pablo">SS-CHY-Tx-H2</i>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+				<span class="navbar-toggler-icon icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:location.reload();">
+							<i class="material-icons">refresh</i><p class="d-lg-none d-md-block">Refresh Data</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#pablo">
+							<i class="material-icons">notifications</i><p class="d-lg-none d-md-block">Notifications</p>
+							</a>
+						</li>
+						<!-- your navbar here -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+		<div class="content">
+			<div class="container-fluid">
+				<!-- your content here -->
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="card">
+							<div class="card-header card-header-tabs card-header-primary">
+								<h4 class="card-title">Transformer Indicator Real-time Data</h4>
+								<p class="card-category">Data exported to 
+									<a target="_blank" href="https://www.adafruit.com/">Adafruit</a>
+									feeds every 30 seconds.
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 col-md-12">
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="text-center"><b>#</b></th>
+												<th class="text-center"><b>Transformer Indicator</b></th>
+												<th class="text-center"><b>Temperature(°C)</b></th>
+												<th><b>Indicator Status</b></th>
+												<th><b>Indicator Alarm</b></th>
+												<th><b>Updating Time</b></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td class="text-center">Oil Level Indicator</td>
+												<td id="oli_temp" class="text-center"></td>
+												<td id="f11"></td>
+												<td id="f23"></td>
+												<td id="oli_time"></td>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-center">2</td>
+												<td class="text-center">Oil Temperature Indicator</td>
+												<td id="oti_temp" class="text-center"></td>
+												<td id="f12"></td>
+												<td id="f22"></td>
+												<td id="oti_time"></td>
+											</tr>
+											<tr>
+												<td class="text-center">3</td>
+												<td class="text-center">Winding Temperature Indicator</td>
+												<td id="wti_temp" class="text-center"></td>
+												<td id="f13"></td>
+												<td id="f21"></td>
+												<td id="wti_time"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="card card-nav-tabs">
+							<div class="card-header card-header-tabs card-header-primary">
+								<div class="nav-tabs-navigation">
+									<div class="nav-tabs-wrapper">
+										<span class="nav-tabs-title">Transformer Information:</span>
+										<ul class="nav nav-tabs" data-tabs="tabs">
+											<li class="nav-item">
+												<a class="nav-link active" href="#decision" data-toggle="tab">
+													<i class="material-icons">save</i> Decision Making
+													<div class="ripple-container"></div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#profile" data-toggle="tab">
+													<i class="material-icons">save</i> Profile
+													<div class="ripple-container"></div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#location" data-toggle="tab">
+													<i class="material-icons">map</i> Location
+													<div class="ripple-container"></div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="tab-content">
+									<div class="tab-pane active" id="decision">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td><b>Temperature Difference (OLI-OTI)</b></td>
+													<td id="oil_difference"></td>
+													</td>
+												</tr>
+												<tr>
+													<td><b>Transformer Oil Adjustment</b></td>
+													<td id="V"></td>
+												</tr>
+												<tr>
+													<td><b>Action</b></td>
+													<td>
+														<p id="f31"></p>
+														<p id="oildrum">
+													</td>
+												</tr>
+												<tr>
+													<td><b>Oil Leakage/Gush Severity Judgement</b></td>
+													<td id= "f32"></td>
+													<!--success,warning,danger-->
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane" id="profile">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td><b>Transformer Rating</b></td>
+													<td>35000kVA</td>
+													</td>
+												</tr>
+												<tr>
+													<td><b>Transformer Oil Weight</b></td>
+													<td>23194L</td>
+												</tr>
+												<tr>
+													<td><b>Transformer Oil Type</b></td>
+													<td>NYNAS 10GBN</td>
+												</tr>
+												<tr>
+													<td><b>Transformer Manufacturer</b></td>
+													<td>Siemens</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane" id="location">
+										<div class="tab-content">
+											<div id="googleMap" style="width:100%;height:400px;"></div>
+											<script>
+												function myMap() {
+												var chy = {lat:22.34473,lng:114.19505};
+												var mapProp= {
+												  center:chy,
+												  zoom:18,
+												};
+												var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+												var marker = new google.maps.Marker({
+													position:chy,
+													map:map
+												});
+												}
+											</script>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container-fluid">
+						<!--
+							<nav class="float-left">
+								<ul>
+									<li>
+										Transformer Indicator Real-time Condition Monitoring
+									</li>
+								</ul>
+							</nav>
+							-->
+						<div class="copyright float-right">
+							&copy;
+							<script>
+								document.write(new Date().getFullYear())
+							</script>, made by <i class="material-icons">account_circle</i> 
+							<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
+						</div>
+						<!-- your footer here -->
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!--   Core JS Files   -->
+		<script src="../assets/js/core/jquery.min.js"></script>
+		<script src="../assets/js/core/popper.min.js"></script>
+		<script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+		<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+		<!-- Plugin for Date Time Format, full documentation here: http://blog.stevenlevithan.com/archives/date-time-format -->
+		<script src="../assets/js/plugins/date.format.js"></script>
+		<!-- Plugin for the momentJs  -->
+		<script src="../assets/js/plugins/moment.min.js"></script>
+		<!--  Plugin for Sweet Alert -->
+		<script src="../assets/js/plugins/sweetalert2.js"></script>
+		<!-- Forms Validations Plugin -->
+		<script src="../assets/js/plugins/jquery.validate.min.js"></script>
+		<!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+		<script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+		<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+		<script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
+		<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+		<!-- <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script> -->
+		<!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+		<script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+		<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+		<script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+		<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+		<!-- <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script> -->
+		<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+		<!-- <script src="../assets/js/plugins/fullcalendar.min.js"></script> -->
+		<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+		<!-- <script src="../assets/js/plugins/jquery-jvectormap.js"></script> -->
+		<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+		<script src="../assets/js/plugins/nouislider.min.js"></script>
+		<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+		<!-- Library for adding dinamically elements -->
+		<script src="../assets/js/plugins/arrive.min.js"></script>
+		<!--  Google Maps Plugin    -->
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2Y7RLa67iO342K25_fS8bamdtrD-mwk&callback=myMap"></script>
+		<!-- Place this tag in your head or just before your close body tag. -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<!-- Chartist JS -->
+		<!-- ><script src="../assets/js/plugins/chartist.min.js"></script>< -->
+		<!--  Notifications Plugin    -->
+		<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+		<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+		<script src="../assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+		<!-- AdafruitIO-JQuery, full documentation here: https://github.com/mohinishsharma/AdafruitIO-JQuery -->
+		<script src="../assets/js/adafruitIO/mqtt-min.js"></script>
+		<script src="../assets/js/adafruitIO/adafruitIO_v2.js"></script>
+		<!-- TIRCM Calculation Core JS tircmcalculation.js -->
+		<script src="../assets/js/tircmcalculation.js"></script>
+		<!-- Substation Folder TIRCM-SS-CHY-Tx-H2.js -->
+		<script src="../assets/js/substation/TIRCM-SS-CHY-Tx-H2.js"></script>
+		<!--must put at the bottom-->
+	</body>
+</html>

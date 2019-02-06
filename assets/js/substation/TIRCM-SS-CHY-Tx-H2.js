@@ -29,7 +29,7 @@
 		//alert("Connected");
 		$.notify({
 			// options
-			message: '<i class="material-icons">notifications</i><b>Connected to Adafruit Server Successfully!</b>'
+			message: '<a>Connected to Server Successfully!</a>'
 		}, {
 			// settings
 			placement: {

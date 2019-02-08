@@ -63,194 +63,197 @@
 			</div>
 		</div>
 		<div class="main-panel">
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-			<div class="container-fluid">
-				<div class="navbar-wrapper">
-					<i class="navbar-brand" href="#pablo">SS-CHY-Tx-H2</i>
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+				<div class="container-fluid">
+					<div class="navbar-wrapper">
+						<i class="navbar-brand" href="#pablo">SS-CHY-Tx-H2</i>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					<span class="navbar-toggler-icon icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:location.reload();">
+									<i class="material-icons">refresh</i>
+									<p class="d-lg-none d-md-block">Refresh Data</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#pablo">
+									<i class="material-icons">notifications</i>
+									<p class="d-lg-none d-md-block">Notifications</p>
+								</a>
+							</li>
+							<!-- your navbar here -->
+						</ul>
+					</div>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="navbar-toggler-icon icon-bar"></span>
-				<span class="navbar-toggler-icon icon-bar"></span>
-				<span class="navbar-toggler-icon icon-bar"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="javascript:location.reload();">
-							<i class="material-icons">refresh</i><p class="d-lg-none d-md-block">Refresh Data</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#pablo">
-							<i class="material-icons">notifications</i><p class="d-lg-none d-md-block">Notifications</p>
-							</a>
-						</li>
-						<!-- your navbar here -->
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- End Navbar -->
-		<div class="content">
-			<div class="container-fluid">
-				<!-- your content here -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-header card-header-tabs card-header-primary">
-								<h4 class="card-title">Transformer Indicator Real-time Data</h4>
-								<p class="card-category">Data exported to 
-									<a target="_blank" href="https://www.adafruit.com/">Adafruit</a>
-									feeds every 30 seconds.
-								</p>
-							</div>
-							<div class="row">
-								<div class="col-lg-12 col-md-12">
-									<table class="table">
-										<thead>
-											<tr>
-												<th class="text-center"><b>#</b></th>
-												<th class="text-center"><b>Transformer Indicator</b></th>
-												<th class="text-center"><b>Temperature(°C)</b></th>
-												<th><b>Indicator Status</b></th>
-												<th><b>Indicator Alarm</b></th>
-												<th><b>Updating Time</b></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="text-center">1</td>
-												<td class="text-center">Oil Level Indicator</td>
-												<td id="oli_temp" class="text-center"></td>
-												<td id="f11"></td>
-												<td id="f23"></td>
-												<td id="oli_time"></td>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">2</td>
-												<td class="text-center">Oil Temperature Indicator</td>
-												<td id="oti_temp" class="text-center"></td>
-												<td id="f12"></td>
-												<td id="f22"></td>
-												<td id="oti_time"></td>
-											</tr>
-											<tr>
-												<td class="text-center">3</td>
-												<td class="text-center">Winding Temperature Indicator</td>
-												<td id="wti_temp" class="text-center"></td>
-												<td id="f13"></td>
-												<td id="f21"></td>
-												<td id="wti_time"></td>
-											</tr>
-										</tbody>
-									</table>
+			</nav>
+			<!-- End Navbar -->
+			<div class="content">
+				<div class="container-fluid">
+					<!-- your content here -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="card">
+								<div class="card-header card-header-tabs card-header-primary">
+									<h4 class="card-title">Transformer Indicator Real-time Data</h4>
+									<p class="card-category">Data exported to 
+										<a target="_blank" href="https://www.adafruit.com/">Adafruit</a>
+										feeds every 30 seconds.
+									</p>
+								</div>
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>#</b></th>
+													<th class="text-center"><b>Transformer Indicator</b></th>
+													<th class="text-center"><b>Temperature(°C)</b></th>
+													<th><b>Indicator Status</b></th>
+													<th><b>Indicator Alarm</b></th>
+													<th><b>Updating Time</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">1</td>
+													<td class="text-center">Oil Level Indicator</td>
+													<td id="oli_temp" class="text-center"></td>
+													<td id="f11"></td>
+													<td id="f23"></td>
+													<td id="oli_time"></td>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">2</td>
+													<td class="text-center">Oil Temperature Indicator</td>
+													<td id="oti_temp" class="text-center"></td>
+													<td id="f12"></td>
+													<td id="f22"></td>
+													<td id="oti_time"></td>
+												</tr>
+												<tr>
+													<td class="text-center">3</td>
+													<td class="text-center">Winding Temperature Indicator</td>
+													<td id="wti_temp" class="text-center"></td>
+													<td id="f13"></td>
+													<td id="f21"></td>
+													<td id="wti_time"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card card-nav-tabs">
-							<div class="card-header card-header-tabs card-header-primary">
-								<div class="nav-tabs-navigation">
-									<div class="nav-tabs-wrapper">
-										<span class="nav-tabs-title">Transformer Information:</span>
-										<ul class="nav nav-tabs" data-tabs="tabs">
-											<li class="nav-item">
-												<a class="nav-link active" href="#decision" data-toggle="tab">
-													<i class="material-icons">save</i> Decision Making
-													<div class="ripple-container"></div>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#profile" data-toggle="tab">
-													<i class="material-icons">save</i> Profile
-													<div class="ripple-container"></div>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#location" data-toggle="tab">
-													<i class="material-icons">map</i> Location
-													<div class="ripple-container"></div>
-												</a>
-											</li>
-										</ul>
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="card card-nav-tabs">
+								<div class="card-header card-header-tabs card-header-primary">
+									<div class="nav-tabs-navigation">
+										<div class="nav-tabs-wrapper">
+											<span class="nav-tabs-title">Transformer Information:</span>
+											<ul class="nav nav-tabs" data-tabs="tabs">
+												<li class="nav-item">
+													<a class="nav-link active" href="#decision" data-toggle="tab">
+														<i class="material-icons">save</i> Decision Making
+														<div class="ripple-container"></div>
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#profile" data-toggle="tab">
+														<i class="material-icons">save</i> Profile
+														<div class="ripple-container"></div>
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#location" data-toggle="tab">
+														<i class="material-icons">map</i> Location
+														<div class="ripple-container"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="card-body">
-								<div class="tab-content">
-									<div class="tab-pane active" id="decision">
-										<table class="table">
-											<tbody>
-												<tr>
-													<td><b>Temperature Difference (OLI-OTI)</b></td>
-													<td id="oil_difference"></td>
-													</td>
-												</tr>
-												<tr>
-													<td><b>Transformer Oil Adjustment</b></td>
-													<td id="V"></td>
-												</tr>
-												<tr>
-													<td><b>Action</b></td>
-													<td>
-														<p id="f31"></p>
-														<p id="oildrum">
-													</td>
-												</tr>
-												<tr>
-													<td><b>Oil Leakage/Gush Severity Judgement</b></td>
-													<td id= "f32"></td>
-													<!--success,warning,danger-->
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="tab-pane" id="profile">
-										<table class="table">
-											<tbody>
-												<tr>
-													<td><b>Transformer Rating</b></td>
-													<td>35000kVA</td>
-													</td>
-												</tr>
-												<tr>
-													<td><b>Transformer Oil Weight</b></td>
-													<td>23194L</td>
-												</tr>
-												<tr>
-													<td><b>Transformer Oil Type</b></td>
-													<td>NYNAS 10GBN</td>
-												</tr>
-												<tr>
-													<td><b>Transformer Manufacturer</b></td>
-													<td>Siemens</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="tab-pane" id="location">
-										<div class="tab-content">
-											<div id="googleMap" style="width:100%;height:400px;"></div>
-											<script>
-												function myMap() {
-												var chy = {lat:22.34473,lng:114.19505};
-												var mapProp= {
-												  center:chy,
-												  zoom:18,
-												};
-												var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-												var marker = new google.maps.Marker({
-													position:chy,
-													map:map
-												});
-												}
-											</script>
+								<div class="card-body">
+									<div class="tab-content">
+										<div class="tab-pane active" id="decision">
+											<table class="table">
+												<tbody>
+													<tr>
+														<td><b>Temperature Difference (OLI-OTI)</b></td>
+														<td id="oil_difference"></td>
+														</td>
+													</tr>
+													<tr>
+														<td><b>Transformer Oil Adjustment</b></td>
+														<td id="V"></td>
+													</tr>
+													<tr>
+														<td><b>Action</b></td>
+														<td>
+															<p id="f31"></p>
+															<p id="oildrum">
+														</td>
+													</tr>
+													<tr>
+														<td><b>Oil Leakage/Gush Severity Judgement</b></td>
+														<td id= "f32"></td>
+														<!--success,warning,danger-->
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tab-pane" id="profile">
+											<table class="table">
+												<tbody>
+													<tr>
+														<td><b>Transformer Rating</b></td>
+														<td>35000kVA</td>
+														</td>
+													</tr>
+													<tr>
+														<td><b>Transformer Oil Weight</b></td>
+														<td>23194L</td>
+													</tr>
+													<tr>
+														<td><b>Transformer Oil Type</b></td>
+														<td>NYNAS 10GBN</td>
+													</tr>
+													<tr>
+														<td><b>Transformer Manufacturer</b></td>
+														<td>Siemens</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tab-pane" id="location">
+											<div class="tab-content">
+												<div id="googleMap" style="width:100%;height:400px;"></div>
+												<script>
+													function myMap() {
+													var chy = {lat:22.34473,lng:114.19505};
+													var mapProp= {
+													  center:chy,
+													  zoom:18,
+													};
+													var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+													var marker = new google.maps.Marker({
+														position:chy,
+														map:map
+													});
+													}
+												</script>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -258,28 +261,26 @@
 						</div>
 					</div>
 				</div>
-				<footer class="footer">
-					<div class="container-fluid">
-						<!--
-							<nav class="float-left">
-								<ul>
-									<li>
-										Transformer Indicator Real-time Condition Monitoring
-									</li>
-								</ul>
-							</nav>
-							-->
-						<div class="copyright float-right">
-							&copy;
-							<script>
-								document.write(new Date().getFullYear())
-							</script>, made by <i class="material-icons">account_circle</i> 
-							<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
-						</div>
-						<!-- your footer here -->
-					</div>
-				</footer>
 			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<nav class="copyright float-left">
+						<ul>
+							<li>
+								Transformer Indicator Real-time Condition Monitoring
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright float-right">
+						&copy;
+						<script>
+							document.write(new Date().getFullYear())
+						</script>, made by <i class="material-icons">account_circle</i> 
+						<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
+					</div>
+					<!-- your footer here -->
+				</div>
+			</footer>
 		</div>
 		<!--   Core JS Files   -->
 		<script src="../assets/js/core/jquery.min.js"></script>

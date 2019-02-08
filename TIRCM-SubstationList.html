@@ -24,53 +24,53 @@
 	</head>
 	<body>
 		<div class="wrapper ">
-		<div class="sidebar" data-color="purple" data-background-color="white">
-			<!--
-				Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-				
-				Tip 2: you can also add an image using data-image tag
-				-->
-			<div class="logo">
-				<a class="simple-text logo-normal">
-				TIRCM V1.01
-				</a>
+			<div class="sidebar" data-color="purple" data-background-color="white">
+				<!--
+					Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+					
+					Tip 2: you can also add an image using data-image tag
+					-->
+				<div class="logo">
+					<a class="simple-text logo-normal">
+					TIRCM V1.01
+					</a>
+				</div>
+				<div class="sidebar-wrapper">
+					<ul class="nav">
+						<!-- your sidebar here -->
+						<li class="nav-item active">
+							<a class="nav-link" href="#0">
+								<!--replace href with substation.html later-->
+								<i class="material-icons">content_paste</i>
+								<p>Substation List</p>
+							</a>
+						</li>
+						<!-- Log Out Script -->
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">
+								<i class="material-icons">error_outline</i>
+								<p>Log out</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar-background" style="background-image: url(&quot;./assets/img/sidebar-3.jpg&quot;);">
+				</div>
 			</div>
-			<div class="sidebar-wrapper">
-				<ul class="nav">
-					<!-- your sidebar here -->
-					<li class="nav-item active">
-						<a class="nav-link" href="#0">
-							<!--replace href with substation.html later-->
-							<i class="material-icons">content_paste</i>
-							<p>Substation List</p>
-						</a>
-					</li>
-					<!-- Log Out Script -->
-					<li class="nav-item">
-						<a class="nav-link" href="./index.html">
-							<i class="material-icons">error_outline</i>
-							<p>Log out</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="sidebar-background" style="background-image: url(&quot;./assets/img/sidebar-3.jpg&quot;);">
-			</div>
-		</div>
-		<div class="main-panel">
-			<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-				<div class="container-fluid">
-					<div class="navbar-wrapper">
-						<i class="navbar-brand" href="#pablo">Substation List</i>
-					</div>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="navbar-toggler-icon icon-bar"></span>
-					<span class="navbar-toggler-icon icon-bar"></span>
-					<span class="navbar-toggler-icon icon-bar"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end">
+			<div class="main-panel">
+				<!-- Navbar -->
+				<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+					<div class="container-fluid">
+						<div class="navbar-wrapper">
+							<i class="navbar-brand" href="#pablo">Substation List</i>
+						</div>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="navbar-toggler-icon icon-bar"></span>
+						<span class="navbar-toggler-icon icon-bar"></span>
+						<span class="navbar-toggler-icon icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end">
 							<form class="navbar-form">
 								<span class="bmd-form-group">
 									<!-- <div class="input-group no-border">
@@ -87,252 +87,253 @@
 							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a class="nav-link" href="#pablo">
-									<i class="material-icons">notifications</i><p class="d-lg-none d-md-block">Notifications</p>
+										<i class="material-icons">notifications</i>
+										<p class="d-lg-none d-md-block">Notifications</p>
 									</a>
 								</li>
 								<!-- your navbar here -->
 							</ul>
 						</div>
 					</div>
-			</nav>
-			<!-- End Navbar -->
-			<div class="content">
-			<div class="container-fluid">
-			<!-- your content here -->
-			<div id="accordion" role="tablist">
-			<div class="card card-collapse">
-			<div class="card-header" role="tab" id="headingOne">
-			<h5 class="mb-0">
-			<a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			"A"
-			<i class="material-icons">keyboard_arrow_down</i>
-			</a>
-			</h5>
-			</div>
-			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-			<div class="card-body">
-			<table class="table">
-			<thead>
-			<tr>
-			<th class="text-center"><b>Substation Name</b></th>
-			<th class="text-center" colspan="3"><b>Equipment List</b></th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			<td class="text-center">APA</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center" rowspan="2">APB</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">Tx H4</td>
-			<td class="text-center">Tx H5</td>
-			<td class="text-center">Tx H6</td>
-			</tr>												
-			</tbody>
-			</table>
-			</div>
-			</div>
-			</div>
-			<div class="card card-collapse">
-			<div class="card-header" role="tab" id="headingTwo">
-			<h5 class="mb-0">
-			<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-			"B"
-			<i class="material-icons">keyboard_arrow_down</i>
-			</a>
-			</h5>
-			</div>
-			<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-			<div class="card-body">
-			<table class="table">
-			<thead>
-			<tr>
-			<th class="text-center"><b>Substation Name</b></th>
-			<th class="text-center" colspan="3"><b>Equipment List</b></th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			<td class="text-center">BOU</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center" rowspan="2">BXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">Tx H4</td>
-			<td class="text-center">Tx H5</td>
-			<td class="text-center">Tx H6</td>
-			</tr>												
-			</tbody>
-			</table>
-			</div>
-			</div>
-			</div>
-			<div class="card card-collapse">
-			<div class="card-header" role="tab" id="headingThree">
-			<h5 class="mb-0">
-			<a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-			"C"
-			<i class="material-icons">keyboard_arrow_down</i>
-			</a>
-			</h5>
-			</div>
-			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-			<div class="card-body">
-			<table class="table">
-			<thead>
-			<tr>
-			<th class="text-center"><b>Substation Name</b></th>
-			<th class="text-center" colspan="3"><b>Equipment List</b></th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			<td class="text-center">CHY</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center"><a href="./substation/TIRCM-SS-CHY-Tx-H2.html"><b>Tx H2</b></a></td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">CXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center" rowspan="2">CXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">Tx H4</td>
-			<td class="text-center">Tx H5</td>
-			<td class="text-center">Tx H6</td>
-			</tr>												
-			</tbody>
-			</table>
-			</div>
-			</div>
-			</div>
-			<div class="card card-collapse">
-			<div class="card-header" role="tab" id="headingFour">
-			<h5 class="mb-0">
-			<a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-			"D"
-			<i class="material-icons">keyboard_arrow_down</i>
-			</a>
-			</h5>
-			</div>
-			<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
-			<div class="card-body">
-			<table class="table">
-			<thead>
-			<tr>
-			<th class="text-center"><b>Substation Name</b></th>
-			<th class="text-center" colspan="3"><b>Equipment List</b></th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			<td class="text-center">DXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center" rowspan="2">DXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">Tx H4</td>
-			<td class="text-center">Tx H5</td>
-			<td class="text-center">Tx H6</td>
-			</tr>												
-			</tbody>
-			</table>
-			</div>
-			</div>
-			</div>
-			<div class="card card-collapse">
-			<div class="card-header" role="tab" id="headingFive">
-			<h5 class="mb-0">
-			<a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-			"E"
-			<i class="material-icons">keyboard_arrow_down</i>
-			</a>
-			</h5>
-			</div>
-			<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
-			<div class="card-body">
-			<table class="table">
-			<thead>
-			<tr>
-			<th class="text-center"><b>Substation Name</b></th>
-			<th class="text-center" colspan="3"><b>Equipment List</b></th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			<td class="text-center">EXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center" rowspan="2">CXX</td>
-			<td class="text-center">Tx H1</td>
-			<td class="text-center">Tx H2</td>
-			<td class="text-center">Tx H3</td>
-			</tr>
-			<tr>
-			<td class="text-center">Tx H4</td>
-			<td class="text-center">Tx H5</td>
-			<td class="text-center">Tx H6</td>
-			</tr>												
-			</tbody>
-			</table>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			<footer class="footer">
-			<div class="container-fluid">
-			<nav class="float-left">
-			<ul>
-			<li>
-			Transformer Indicator Real-time Condition Monitoring
-			</li>
-			</ul>
-			</nav>
-			<div class="copyright float-right">
-			&copy;
-			<script>
-				document.write(new Date().getFullYear())
-			</script>, made by <i class="material-icons">account_circle</i> 
-			<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
-			</div>
-			<!-- your footer here -->
-			</div>
-			</footer>
+				</nav>
+				<!-- End Navbar -->
+				<div class="content">
+					<div class="container-fluid">
+						<!-- your content here -->
+						<div id="accordion" role="tablist">
+							<div class="card card-collapse">
+								<div class="card-header" role="tab" id="headingOne">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										"A"
+										<i class="material-icons">keyboard_arrow_down</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>Substation Name</b></th>
+													<th class="text-center" colspan="3"><b>Equipment List</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">APA</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center" rowspan="2">APB</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">Tx H4</td>
+													<td class="text-center">Tx H5</td>
+													<td class="text-center">Tx H6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card card-collapse">
+								<div class="card-header" role="tab" id="headingTwo">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										"B"
+										<i class="material-icons">keyboard_arrow_down</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>Substation Name</b></th>
+													<th class="text-center" colspan="3"><b>Equipment List</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">BOU</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center" rowspan="2">BXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">Tx H4</td>
+													<td class="text-center">Tx H5</td>
+													<td class="text-center">Tx H6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card card-collapse">
+								<div class="card-header" role="tab" id="headingThree">
+									<h5 class="mb-0">
+										<a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+										"C"
+										<i class="material-icons">keyboard_arrow_down</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>Substation Name</b></th>
+													<th class="text-center" colspan="3"><b>Equipment List</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">CHY</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center"><a href="./substation/TIRCM-SS-CHY-Tx-H2.html"><b>Tx H2</b></a></td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">CXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center" rowspan="2">CXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">Tx H4</td>
+													<td class="text-center">Tx H5</td>
+													<td class="text-center">Tx H6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card card-collapse">
+								<div class="card-header" role="tab" id="headingFour">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+										"D"
+										<i class="material-icons">keyboard_arrow_down</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+									<div class="card-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>Substation Name</b></th>
+													<th class="text-center" colspan="3"><b>Equipment List</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">DXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center" rowspan="2">DXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">Tx H4</td>
+													<td class="text-center">Tx H5</td>
+													<td class="text-center">Tx H6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card card-collapse">
+								<div class="card-header" role="tab" id="headingFive">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+										"E"
+										<i class="material-icons">keyboard_arrow_down</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+									<div class="card-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center"><b>Substation Name</b></th>
+													<th class="text-center" colspan="3"><b>Equipment List</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">EXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center" rowspan="2">CXX</td>
+													<td class="text-center">Tx H1</td>
+													<td class="text-center">Tx H2</td>
+													<td class="text-center">Tx H3</td>
+												</tr>
+												<tr>
+													<td class="text-center">Tx H4</td>
+													<td class="text-center">Tx H5</td>
+													<td class="text-center">Tx H6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container-fluid">
+						<nav class="copyright float-left">
+							<ul>
+								<li>
+									Transformer Indicator Real-time Condition Monitoring
+								</li>
+							</ul>
+						</nav>
+						<div class="copyright float-right">
+							&copy;
+							<script>
+								document.write(new Date().getFullYear())
+							</script>, made by <i class="material-icons">account_circle</i> 
+							<a href="https://www.facebook.com/profile.php?id=100011239504882" target="_blank">Steven Yang</a> for better approach of transformer monitoring.
+						</div>
+						<!-- your footer here -->
+					</div>
+				</footer>
 			</div>
 		</div>
 		<!--   Core JS Files   -->
